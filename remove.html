@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+</head>
+<body>
+    <select id="select">
+        <option >First</option>
+        <option>second</option>
+        <option>3rd</option>
+        <option>4th</option>
+        <option>5th</option>
+    </select>
+
+    <button id="btn">remove</button>
+
+    <script>
+       $("#btn").click(function() {
+
+       /*  $('select').children('option:first').remove();
+         */
+       //$('option:selected').remove();
+       $('option:First').remove();
+        // $('option:nth-of-type(3)').remove();
+
+       })
+    </script>
+</body>
+</html>

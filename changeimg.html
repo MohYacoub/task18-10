@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <button id="btn">change img</button>
+    <br>
+    <br>
+    <img id="randomImages" src="images/img1.jpg" alt="#">
+    <script>
+
+        $("#btn").click(function () {
+/* 
+            var image = new Array();
+            image[0] = "images/img1.jpg";
+            image[1] = "images/img2.jpg";
+            image[2] = "images/img3.jpg";
+            var size = image.length
+            var x = Math.floor(size * Math.random())
+
+            $('#randomImages').attr('src', image[x]); */
+
+            imagearray = ["images/img1.jpg" , "images/img2.jpg" , "images/img3.jpg"]
+
+            x = Math.floor(Math.random() * imagearray.length)
+            console.log(x)
+            srcimg = imagearray[x];
+            $('#randomImages').attr('src', srcimg)
+        })
+    </script>
+</body>
+
+</html>
